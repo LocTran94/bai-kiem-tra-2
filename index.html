@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+//Bài 2 :
+const arr = [];
+// // Bài 2-1 :
+let n = +prompt('nhập số phần tử của mảng');
+// //Bài 2-2 :
+ for (let i = 0; i < n; i++){
+     arr[i] = +prompt('số thứ :' + (i+1));
+ }
+// //Bài 2-3 :
+document.write(arr.join('-'))
+//Bài 2-4 :
+let tong = 0;
+for (let i = 0; i < n; i++){
+    arr[i] = +prompt('số thứ :' + (i+1));
+    tong = tong + arr[i];
+}
+ document.write('tổng của mảng :'+ tong)
+//Bài 2-5 :
+let tong = 0;
+for (let i = 0; i < n; i++){
+    arr[i] = +prompt('số thứ :' + (i+1));
+   if (arr[i] % 5 ==2){
+       tong = tong + arr[i];
+   }
+}
+// document.write(tong)
+//Bài 2-6:
+let dem = 0;
+ for (let i = 0; i < n; i++){
+     arr[i] = +prompt('số thứ :' + (i+1));
+    if (arr[i] % 6 ==0){
+        dem = dem + 1;
+    }
+ }
+ document.write(dem)
+//Bài 2-7 :
+let tong = 0;
+let dem = 0;
+let tbc;
+ for (let i = 0; i < n; i++){
+     arr[i] = +prompt('số thứ :' + (i+1));
+     if (arr[i] > 10){
+       if (arr[i] % 4 ==3){
+        tong = tong + arr[i];
+        dem = dem + 1;
+        tbc = tong/dem
+
+       }
+     }
+ }
+document.write(tbc)
+//Bài 2-8 :
+let max = 0;
+for (let i = 0; i < n; i++){
+     arr[i] = +prompt('số thứ :' + (i+1));
+     if (max < arr[i]){
+         max = arr[i];
+     }
+}
+
+document.write(max)
+//Bài 2-9 :
+let max = 0;
+for (let i = 0; i < n; i++){
+    arr[i] = +prompt('số thứ :' + (i+1));
+    if (arr[i] % 2 != 0){
+      if (max < arr[i]){
+        max = arr[i];
+      }
+    }
+}
+
+document.write(max)
+//Bài 2-10 :
+let c = +prompt('nhập số cần tìm vị trí');
+let vitri;
+for (let i = 0; i < n; i++) {
+    arr[i] = +prompt('số thứ :' + (i + 1));
+if (arr[i] == c){
+    vitri = i;
+}
+}
+document.write(vitri)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
